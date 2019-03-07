@@ -1,0 +1,174 @@
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git init
+Initialized empty Git repository in C:/Users/gasr/Desktop/materialize/.git/
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git add *
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git commit -m "First commit"
+[master (root-commit) cadd38f] First commit
+ Committer: GABRIEL SILVEIRA DA ROSA <GASR@xxxx>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 43 insertions(+)
+ create mode 100644 index.html
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git remote add origin https://github.com/gsdr1992/branches.test.git
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git push origin master
+fatal: HttpRequestException encountered.
+   Ocorreu um erro ao enviar a solicitação.
+Username for 'https://github.com': gsdr1992
+Password for 'https://gsdr1992@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 529 bytes | 529.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gsdr1992/branches.test.git
+ * [new branch]      master -> master
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git status
+On branch master
+nothing to commit, working tree clean
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git branch
+* master
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git branch test_branch
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git branch
+* master
+  test_branch
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git push origin master
+fatal: HttpRequestException encountered.
+   Ocorreu um erro ao enviar a solicitação.
+Username for 'https://github.com': gsdr1992
+Password for 'https://gsdr1992@github.com':
+Everything up-to-date
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git branch
+* master
+  test_branch
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git checkout test_branch
+Switched to branch 'test_branch'
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git branch
+  master
+* test_branch
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git add *
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git commit -m "First commit on test branch"
+On branch test_branch
+nothing to commit, working tree clean
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git commit -m "First commit on test branch"
+On branch test_branch
+nothing to commit, working tree clean
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git status
+On branch test_branch
+nothing to commit, working tree clean
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git merge
+fatal: No remote for the current branch.
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git rebase test_branch
+Current branch test_branch is up to date.
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git status
+On branch test_branch
+nothing to commit, working tree clean
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git push origin test_branch
+fatal: HttpRequestException encountered.
+   Ocorreu um erro ao enviar a solicitação.
+Username for 'https://github.com': gsdr1992
+Password for 'https://gsdr1992@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'test_branch' on GitHub by visiting:
+remote:      https://github.com/gsdr1992/branches.test/pull/new/test_branch
+remote:
+To https://github.com/gsdr1992/branches.test.git
+ * [new branch]      test_branch -> test_branch
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git status
+On branch test_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git commit -m "Commiting changes on specific branch test" -a
+[test_branch 369c5a8] Commiting changes on specific branch test
+ Committer: GABRIEL SILVEIRA DA ROSA <GASR@xxxx>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+#USER# C:\Users\gasr\Desktop\materialize
+# git push origin test_branch
+fatal: HttpRequestException encountered.
+   Ocorreu um erro ao enviar a solicitação.
+Username for 'https://github.com': gsdr1992
+Password for 'https://gsdr1992@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/gsdr1992/branches.test.git
+   cadd38f..369c5a8  test_branch -> test_branch
+
+#USER# C:\Users\gasr\Desktop\materialize
+#
